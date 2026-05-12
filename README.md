@@ -12,6 +12,23 @@ This project is a **Microservices-Based AI Adaptive Learning Management System (
 - AI-based learning adaptation logic (basic simulation)
 - Modular microservices architecture
 - Scalable and maintainable structure
+-------------
+The system is divided into three core autonomous services:
+
+Auth Service (Node.js): Manages user registration, login, and secure JWT-based session handling.
+
+AI Engine (Python): A background worker that monitors student performance and triggers level promotions.
+
+Database (MongoDB): A NoSQL repository for high-speed data persistence and inter-service synchronization.
+
+🚀 Key Features
+Adaptive Learning: Automatic level shifting based on an 80% mastery threshold.
+
+Fault Isolation: If the AI Engine is down, the Auth service remains operational.
+
+Containerized: Fully Dockerized for "ship-anywhere" deployment.
+
+Stateless Security: Implements JSON Web Tokens (JWT) for secure API communication.
 
 ---
 
